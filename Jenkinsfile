@@ -67,3 +67,7 @@ pipeline {
         }
     }
 }
+
+//Run the below commnads in Terrafrom_tfvars folder to destroy
+//terraform init -reconfigure -backend-config=dev/backend.tf
+//terraform destroy -var-file=dev/dev.tfvars -var=app_version=1.0.0 -auto-approve
